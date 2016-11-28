@@ -1,0 +1,343 @@
+/*
+Project Name: Relaxr two column
+Client: Relaxr
+Author: Jen Honegger
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: 'Open Sans', sans-serif;;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+.container {
+  width: 960px;
+  margin: auto;
+}
+
+#main {
+  background-color: #f0efef;
+  padding-top: 70px;
+}
+
+header {
+  padding: 28px 0px 32px 0px;
+  margin: auto;
+  background-color: #033048;
+  clear: both;
+}
+
+nav {
+  float: right;
+  padding-right: 50px;
+  width: 580px;
+}
+
+
+nav ul li {
+  display: inline-block;
+  color: #f9e42e;
+  padding: 15px 0px 0px 38px;
+  font-size: 19px;
+  font-family: 'Open Sans' , sans-serif;
+  font-weight: 400;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f9e42e;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+
+section {
+  width: 700px;
+  float: left;
+  display: block;
+  padding: 0px 0px 32px 96px;
+}
+
+
+#border {
+  border-bottom: 1px solid #033048;
+  padding: 0px 0px 32px 96px;
+}
+
+aside {
+  width: 240px;
+  float: right;
+  display: block;
+  padding: 0px 96px 0px 0px;
+  }
+
+footer {
+  background-color: #121212;
+}
+
+#spacer {
+  height: 70px;
+  clear: both;
+}
+
+
+div#signup {
+background-color: #f9e42e;
+padding: 28px;
+clear: both;
+}
+
+
+aside ul {
+   padding-bottom: 40px;
+}
+
+aside ul li {
+  display: block;
+  color: #033048;
+  font-size: 18px;
+  font-family: 'Open Sans' , sans-serif;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+aside ul li a {
+  text-decoration: none;
+  color: #033048;
+}
+
+aside ul li a:hover {
+  color: #1f7aaa;
+}
+
+
+#adUnit {
+  background-color: #fff;
+  height: 435px;
+  margin-top: 50px;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+h1{
+  font-family: 'Open Sans' , sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #033048;
+  line-height: 1.3em;
+}
+
+h2{
+  font-family: 'Open Sans' , sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  color: #033048;
+  padding-bottom: 20px;
+  line-height: 1em;
+}
+
+
+h3{
+  font-family: 'Open Sans' , sans-serif;
+  font-weight: 700;
+  font-size: 29px;
+  color: #033048;
+  padding-top: 23px;
+  margin: auto;
+  text-align: center;
+}
+
+
+.logoWhite {
+  font: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 38px;
+  color: #fff;
+  display: inline-block;
+  padding-left: 96px;
+}
+
+
+.logoYellow {
+  font: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  color: #f9e42e;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.sectionImages {
+  width: 604px;
+  display: block;
+  padding: 20px 0px;
+}
+
+
+
+.btnSignUpNow {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color:#fff;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 0px;
+  background-color: #033048;
+  border-radius: 5px;
+  margin: auto;
+  width:250px;
+  display: block;
+}
+
+.btnSignUpNow:hover {
+   background-color: #1f7aaa;
+  border-radius: 5px;
+  margin: auto;
+  width:250px;
+  display: block;
+}
+
+
+
+div#icons {
+  text-align: center;
+  }
+
+
+.twitter {
+  height: 27px;
+}
+
+.facebook {
+  height: 30px;
+}
+
+footer.img {
+  text-align: center;
+  margin: 0px 20px;
+}
+
+
+p.copyright {
+  color: #fff;
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  padding: 40px 0px;
+}
+
+
+
+p.section {
+  font-family: 'Open Sans' , sans-serif;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 1.3em;
+  color: #606161;
+}
+
+a.readMore {
+  font-family: 'Open Sans' , sans-serif;
+  font-weight: 600;
+  font-size: 19px;
+  color: #033048;
+  text-align: right;
+  display: block;
+  text-decoration: none;
+  padding-top: 40px;
+}
+
+a.readMore:hover {
+  color: #1f7aaa;
+}
+
+
+.dropcap {
+    float: left;
+    width: 0.7em;
+    font-size: 400%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: 80%;
+}
+
+
+p.aside {
+  font-family: 'Open Sans' , sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3em;
+  color: #033048;
+}
+
+
+a.learnMore {
+  font-family: 'Open Sans' , sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: #033048;
+  display: block;
+  text-decoration: none;
+}
+
+
+a.learnMore:hover {
+  color: #1f7aaa;
+}
+
